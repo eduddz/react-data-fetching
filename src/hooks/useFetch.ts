@@ -1,3 +1,8 @@
+/**
+ * Esse hook não está sendo utilizado
+ * Porque agora será usado REACT QUERY
+ */
+
 import axios, { AxiosRequestConfig } from "axios"
 import { useEffect, useState } from "react"
 
@@ -30,3 +35,4 @@ export const useFetch = <T = unknown>(url: string, option?: AxiosRequestConfig) 
     // retornando { data } dentro de um objeto porque será retornado mais coisas de dentro
     return { data, error, isFetching }
 }
+
